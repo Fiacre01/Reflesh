@@ -12,8 +12,7 @@ public class Main {
         String name= "  Fiacre \"Indagiye\" Sibo   ";
         int age= 25;
         int money= 111_111_111;
-        System.out.println(age);
-        System.out.println(money);
+
         Date now = new Date();
         int randomInt= (int) (Math.random()*9)+1;
         System.out.println("random integer = " +randomInt);
@@ -23,6 +22,7 @@ public class Main {
         System.out.println(newName +", "+ newName.length());
         SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss");
         System.out.println(formatter.format(now));
+
 
 
     }
