@@ -12,21 +12,13 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
-        int num1=10;
-        int num2=20;
         String fullName="";
         String firstName= "John";
         String lastName= "Smith";
 
-
-        int randomInt= (int) (Math.random()*9)+1;
-        System.out.println("random integer = " +randomInt);
-
-        Addition add= new Addition();
-        int sum = add.addTwoNum(num1,num2);
-        System.out.println("The sum of both numbers is: " +sum);
-
         strings(firstName,lastName,fullName);
+
+        maths();
 
         dates();
 
@@ -61,5 +53,29 @@ public class Main {
         System.out.println("The time is:" +formatter.format(now));
 
 
+    }
+
+    public static void maths(){
+
+
+        int randomInt= (int) (Math.random()*9)+1;
+        System.out.println("random integer = " +randomInt);
+
+        Addition add= new Addition();
+
+        System.out.println("Please enter the first number: ");
+        Scanner sc= new Scanner(System.in);
+        int num3= sc.nextInt();
+
+        System.out.println("Please enter the second number: ");
+        int num4= sc.nextInt();
+
+        // calling setters
+        add.setNum1(num3);
+        add.setNum2(num4);
+
+        //using getters
+        int sum = add.addTwoNum(add.getNum1(),add.getNum2());
+        System.out.println("The sum of both numbers is: " +sum);
     }
 }
