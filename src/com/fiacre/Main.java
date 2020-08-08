@@ -43,8 +43,8 @@ public class Main {
 
         // changing name to uppercase
         System.out.println("making name uppercase: ");
-        String newName =  fullName.toUpperCase();
-        System.out.println(newName +", "+ newName.length());
+        String upperCase =  fullName.toUpperCase();
+        System.out.println(upperCase +", "+ upperCase.length());
     }
     public static void dates(){
         Date now = new Date();
